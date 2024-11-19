@@ -1,9 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {LoginComponent} from "./login/login.component";
+import { RegisterComponent } from './register/register.component';
+import { MainComponent } from './main/main.component';
+import { LayoutSinHeaderComponent } from './layout-sin-header/layout-sin-header.component';
+import { LayoutConHeaderComponent } from './layout-con-header/layout-con-header.component';
 
 const routes: Routes = [
-  {path:"", component: LoginComponent}
+  {path:"", 
+    component: LayoutSinHeaderComponent,
+    children:[
+      {path:"", component: LoginComponent},
+      {path:"register", component: RegisterComponent}
+    ]
+  },
+  {
+    path:"app",
+    component: LayoutConHeaderComponent,
+    children:[
+      {path:"main", component: MainComponent}
+    ]
+  },
+  {
+    path:"**",
+    component:LoginComponent
+  }
 ];
 
 @NgModule({
