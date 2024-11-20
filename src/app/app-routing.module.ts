@@ -5,6 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import { MainComponent } from './main/main.component';
 import { LayoutSinHeaderComponent } from './layout-sin-header/layout-sin-header.component';
 import { LayoutConHeaderComponent } from './layout-con-header/layout-con-header.component';
+import { NuevoTaskComponent } from './nuevo-task/nuevo-task.component';
 
 const routes: Routes = [
   {path:"", 
@@ -18,7 +19,8 @@ const routes: Routes = [
     path:"app",
     component: LayoutConHeaderComponent,
     children:[
-      {path:"main", component: MainComponent}
+      {path:"main", component: MainComponent},
+      {path:"nuevo-task", component: NuevoTaskComponent}
     ]
   },
   {

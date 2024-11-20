@@ -1,9 +1,9 @@
-<footer class="position-fixed bottom-0 w-100 ">
+<footer class="position-fixed bottom-0 w-100 z-1">
     <div class="contenedorFooter d-flex w-100 justify-content-around">
-        <i class="bi bi-plus-circle"></i>
+        <i (click)="nuevoTask()" class="bi bi-plus-circle"></i>
         <i class="bi bi-pencil"></i>
         <i class="bi bi-trash"></i>
-        <i class="bi bi-door-closed"></i>
+        <i routerLink="app/login" class="bi bi-door-closed"></i>
     </div>
     
     <div class="col-12 contenedor">

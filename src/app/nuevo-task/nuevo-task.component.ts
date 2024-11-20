@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  selector: 'app-nuevo-task',
+  templateUrl: './nuevo-task.component.html',
+  styleUrl: './nuevo-task.component.scss'
 })
-export class LoginComponent {
-
+export class NuevoTaskComponent {
   constructor(
     private router: Router
   ){}
@@ -15,5 +14,4 @@ export class LoginComponent {
   main(){
     this.router.navigate(['app/main']);
   }
-
 }

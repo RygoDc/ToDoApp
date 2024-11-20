@@ -1,23 +1,21 @@
 
-footer{
-  background-color: antiquewhite;
+footer{  
   width: 100%;
   left: 0;
   right: 0;
   align-items: center;
   padding: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  
-  .contenedorFooter{
     
+  .contenedorFooter{   
     font-size: 40px;
     padding: 10px;
     cursor: pointer;
-    color: black;
+    color: whitesmoke;
     i:hover{
-      color: #71c4ef;
+      color: rgba(56, 59, 219, 0.951);
     }
   }
+
   p{
     text-align: center;
   }

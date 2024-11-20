@@ -1,15 +1,6 @@
-
 div{
-  text-align: center;
-  justify-content: center;
-
-    .globoTerraqueo {
-      img{
-        width: 300px;
-        height: 300px;
-        position:relative;         
-      }          
-    }
+    text-align: center;
+    justify-content: start;
     h2{
         font-size: 60px;
     }
@@ -28,6 +19,17 @@ div{
             border-radius: 10px;
             font-size: 20px;
         }
+        textarea{
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 3px solid rgba(56, 59, 219, 0.951);
+            border-radius: 10px;
+            font-size: 20px;
+            resize: none;
+
+        }
         button{
             width: 300px;
             height: 40px;
@@ -38,4 +40,4 @@ div{
             
         }
     }
-}
+}  

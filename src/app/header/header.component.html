@@ -1,6 +1,11 @@
-<header class="w-100 position-sticky top-0 py-3 px-3 bg-primary row m-auto align-items-center">
-    <div class="col-9">
-        <span class="text-white">Logo aquí</span>
+<header class="w-100 position-sticky top-0 py-3 px-3 bg-black row m-auto align-items-center z-3 ">
+    <div class="col-4">
+        <div class="container globoTerraqueo {{mostrarPlaneta ? 'conHeader' : ''}}">
+            <img id="gif" src="https://media1.giphy.com/media/U4FkC2VqpeNRHjTDQ5/giphy.webp?cid=dda24d50eon1dej10rvwlww1m2qgh0v599tx11qjzq06ydf8&ep=v1_internal_gif_by_id&rid=giphy.webp&ct=g">
+        </div>
+    </div>
+    <div class="col-6">
+        <h2>To Do List</h2>
     </div>
     <nav class="bg-dark" [class.active]="showNav">
         <a class="text-white d-block mb-2 text-decoration-none">Inicio</a>
@@ -10,7 +15,7 @@
             <i class="bi bi-x-lg"></i>
         </button>
     </nav>
-    <div class="col-3">
+    <div class="col-2">
         <button type="button" class="btn btn-light" (click)="toggleNav()">
             <i class="bi bi-list" ></i>
         </button>
