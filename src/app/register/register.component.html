@@ -5,15 +5,15 @@
     <h2>To Do List</h2>
     <br>
     <h3>Ingresa tus datos:</h3>
-    <form (submit)="login()" method="post">
+    <form [formGroup]="formulario" (submit)="login()" method="post">
         <i class="bi bi-person"> Usuario</i>
-        <input class="bi " type="text" name="name" id="name" placeholder="Usuario">
+        <input formControlName="name" class="bi " type="text" name="name" id="name" placeholder="Usuario">
         
         <i class="bi bi-mailbox"> Correo Electrónico</i>
         <input type="email" name="email" id="email" placeholder="tucorreo@corree.com">
         
         <i class="bi bi-key"> Contraseña</i>
-        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+        <input formControlName="password" type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
         
         <i class="bi bi-key"> Repite tu contraseña</i>
         <input type="password" name="rppassword" id="rppassword" placeholder="Repite tu contraseña">

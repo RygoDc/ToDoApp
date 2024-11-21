@@ -12,6 +12,7 @@ import { MainComponent } from './main/main.component';
 import { LayoutSinHeaderComponent } from './layout-sin-header/layout-sin-header.component';
 import { LayoutConHeaderComponent } from './layout-con-header/layout-con-header.component';
 import { NuevoTaskComponent } from './nuevo-task/nuevo-task.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { NuevoTaskComponent } from './nuevo-task/nuevo-task.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

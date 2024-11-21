@@ -1,4 +1,4 @@
-<body>
+<div class="body">
     <div class="container globoTerraqueo">
         <img id="gif" src="https://media1.giphy.com/media/U4FkC2VqpeNRHjTDQ5/giphy.webp?cid=dda24d50eon1dej10rvwlww1m2qgh0v599tx11qjzq06ydf8&ep=v1_internal_gif_by_id&rid=giphy.webp&ct=g">
     </div>
@@ -6,18 +6,21 @@
     <h1>To Do List</h1>
     <p>Inicia Sesión para utilizar la aplicación</p>
 
-    <form (submit)="main()">
-        <i class="bi bi-person"></i>
-        <input type="text" name="name" id="name" placeholder="Usuario">
+    <form method="post" [formGroup]="formulario" (submit)="main()">
+        <div>
+            <i class="bi bi-person"></i>
+        <input formControlName="name" type="text" name="name" id="name" placeholder="Usuario">
+        </div>
         <br>
+        <div class="position-relative password">
+        <i class="bi bi-key"></i>       
+        <input formControlName="password" type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+        </div>
         <br>
-        <i class="bi bi-key"></i>
-        <input  type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
-        <br>  
-        <br>   
+        <div> 
         <button type="submit" class="bi bi-door-open"> Acceder</button>
-        <br>
+        </div>
         <br>
         <a routerLink="/register">¿Todavia no estas registrado?</a>
     </form>
-</body>
+</div>

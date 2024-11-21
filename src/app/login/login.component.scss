@@ -1,4 +1,5 @@
-body{
+.body{
+
   text-align: center;
   justify-content: center;
   .globoTerraqueo {
@@ -8,7 +9,8 @@ body{
       position:relative;
 
     }    
-  }
+  }  
+  
   form{ 
     input{
       border: 3px solid rgba(56, 59, 219, 0.951);
@@ -21,6 +23,14 @@ body{
       width: 100px;
       height: 30px;
       margin: 10px;      
+    }
+    .password{
+      i.check{
+        position: absolute;
+        z-index: 2;
+        right: 0;
+
+      }
     }
 }
 }

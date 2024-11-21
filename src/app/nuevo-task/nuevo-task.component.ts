@@ -14,4 +14,8 @@ export class NuevoTaskComponent {
   main(){
     this.router.navigate(['app/main']);
   }
+
+  volver(){
+    this.router.navigate(['app/main']);
+  }
 }

@@ -1,7 +1,7 @@
 <div class="container">
     <h2>Nueva Tarea</h2>
     <br>
-    <form (submit)="main()">
+    <form method="post" [formGroup]="nuevaTarea">
         <label for="fecha">Fecha</label>
         <input type="date" name="fecha" id="fecha" >
         <br>
@@ -12,6 +12,7 @@
         <br>
         <textarea name="descripcion" id="descripcion"></textarea>       
         <br>
-        <button type="button" >Guardar</button>
+        <button (click)="volver()" type="button" class="btn btn-danger" >Volver</button>
+        <button (submit)="main()" type="button" class="btn btn-success" >Guardar</button>
     </form>
 </div>
