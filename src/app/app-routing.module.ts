@@ -20,7 +20,8 @@ const routes: Routes = [
     component: LayoutConHeaderComponent,
     children:[
       {path:"main", component: MainComponent},
-      {path:"nuevo-task", component: NuevoTaskComponent}
+      {path:"nuevo-task", component: NuevoTaskComponent},
+      { path: '', redirectTo: 'app/main', pathMatch: 'full' }
     ]
   },
   {

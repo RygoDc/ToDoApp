@@ -1,18 +1,53 @@
-<div class="container">
+<div class="container nuevaTarea">
     <h2>Nueva Tarea</h2>
-    <br>
-    <form method="post" [formGroup]="nuevaTarea">
-        <label for="fecha">Fecha</label>
-        <input type="date" name="fecha" id="fecha" >
-        <br>
-        <label for="tarea">Tarea</label>
-        <input type="text" name="tarea" id="tarea" >
-        <br>
-        <label for="descripcion">Descripcion</label>
-        <br>
-        <textarea name="descripcion" id="descripcion"></textarea>       
-        <br>
-        <button (click)="volver()" type="button" class="btn btn-danger" >Volver</button>
-        <button (submit)="main()" type="button" class="btn btn-success" >Guardar</button>
+    <br />
+    <form method="post" class="form-horizontal" (ngSubmit)="main()" [formGroup]="formulario">
+        <div class="form-group">
+            <label class="control-label col-2" for="date">Fecha</label>
+            <input
+                formControlName="date"
+                class="form-control col-10"
+                type="date"
+                name="date"
+                id="date"
+            />
+            <br />
+            <label class="control-label col-2" for="name">Tarea</label>
+            <input
+                formControlName="name"
+                class="form-control col-10"
+                type="text"
+                name="name
+                id="name
+            />
+            <br />
+            <label class="control-label col-2" for="descripcion"
+                >Descripcion</label
+            >
+            <br />
+            <textarea
+                formControlName="descripcion"
+                class="form-control col-10"
+                name="descripcion"
+                id="descripcion"
+            ></textarea>
+            <br />
+            <label class="control-label col-2" for="status">Status</label>
+            <select
+                formControlName="status"
+                class="form-control col-10"
+                name="status"
+                id="status"
+            >
+                <option value="pendiente">Pendiente</option>
+                <option value="completada">Completada</option>
+            </select>
+            <button (click)="volver()" type="button" class="col-5 btn btn-danger">
+                Cancelar
+            </button>
+            <button type="submit" class=" col-5 btn btn-success">
+                Guardar
+            </button>
+        </div>
     </form>
 </div>

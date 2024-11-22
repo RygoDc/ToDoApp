@@ -11,19 +11,13 @@ div{
         justify-content: center;
         padding: 20px;
         input{
-            width: 300px;
-            height: 40px;
-            margin: 10px;
-            padding: 10px;
+            
             border: 3px solid rgba(56, 59, 219, 0.951);
             border-radius: 10px;
             font-size: 20px;
         }
         textarea{
-            width: 300px;
-            height: 100px;
-            margin: 10px;
-            padding: 10px;
+            
             border: 3px solid rgba(56, 59, 219, 0.951);
             border-radius: 10px;
             font-size: 20px;
@@ -31,12 +25,12 @@ div{
 
         }
         button{
-            width: 300px;
+            width: 50%;
             height: 40px;
             margin: 10px;
             border: 3px solid rgba(56, 59, 219, 0.951);
             border-radius: 5px;
-            font-size: 20px;
+            font-size: 15px;
             
         }
     }
