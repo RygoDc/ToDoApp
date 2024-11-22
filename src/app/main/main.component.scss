@@ -9,12 +9,12 @@
    
 
     .card-block1 {
-        min-height: 200px;
+        min-height: 160px;
         width: 130px;
         display: flex;        
         align-items: center;
         justify-content: center;
-        font-size: 2em;
+        font-size: 15px;
         border: 3px solid whitesmoke;
         border-radius: 10px;
         margin: 10px;
@@ -22,7 +22,7 @@
         color: whitesmoke;
         button{
             width: 130px;
-            min-height: 200px;
+            min-height: 160px;
             border-color: transparent;            
             border-radius: 0 10px ;
             margin: 10px;
@@ -33,12 +33,12 @@
         }
     }
     .card-block2{
-        min-height: 200px;
+        min-height: 160px;
         width: 130px;
         display: flex;        
         align-items: center;
         justify-content: center;
-        font-size: 2em;
+        font-size: 15px;
         border: 3px solid rgba(56, 59, 219, 0.951);
         border-radius: 10px;
         margin: 10px;
@@ -47,7 +47,7 @@
         
         button{
             width: 130px;
-            min-height: 200px;
+            min-height: 160px;
             margin: 10px;
             font-size: 20px;
             color: rgba(56, 59, 219);

@@ -1,7 +1,7 @@
 <div class="container nuevaTarea">
     <h2>Nueva Tarea</h2>
     <br />
-    <form method="post" class="form-horizontal" (ngSubmit)="main()" [formGroup]="formulario">
+    <form method="post" class="form-horizontal" (ngSubmit)="agregarTarea()" [formGroup]="formulario">
         <div class="form-group">
             <label class="control-label col-2" for="date">Fecha</label>
             <input
@@ -26,7 +26,7 @@
             >
             <br />
             <textarea
-                formControlName="descripcion"
+                formControlName="description"
                 class="form-control col-10"
                 name="descripcion"
                 id="descripcion"
