@@ -10,7 +10,7 @@ import { ValidadorService } from "../services/funcionalidad/validador.service";
 })
 export class RegisterComponent {
     formulario: FormGroup;
-
+    
     constructor(
         private formBuilder: FormBuilder,
         private validadorService: ValidadorService,
@@ -19,14 +19,25 @@ export class RegisterComponent {
         this.formulario = this.formBuilder.group({
             name: ["", [Validators.required, Validators.minLength(1)]],
             password: ["", [Validators.required, Validators.minLength(1)]],
+            rppassword: ["", [Validators.required, Validators.minLength(1)]],
         });
     }
 
-    login() {
+    validaContrasena() {
         let name = this.formulario.value.name;
         let password = this.formulario.value.password;
+        let rppassword = this.formulario.value.rppassword;
 
-        this.validadorService.agregarUsuario(name, password);
-        this.router.navigate(["login"]);
+        if (password !== rppassword ){ 
+            alert("Las contraseñas no coinciden");
+        }else{
+            this.validadorService.agregarUsuario(name, password);
+            this.router.navigate(["login"]);
+            alert("Usuario registrado");
+        }
     }
+
+    
+        
+    
 }
