@@ -7,13 +7,19 @@
     <div class="col-6">
         <h2>To Do List</h2>
     </div>
-    <nav class="bg-dark" [class.active]="showNav">
-        <a class="text-white d-block mb-2 text-decoration-none">Inicio</a>
+    <nav class="col-2" [class.active]="showNav">
+        <div class="containerNav d-flex flex-column align-items-center">
+        <!-- <a class="text-white d-block mb-2 text-decoration-none">Inicio</a>
         <a class="text-white d-block mb-2 text-decoration-none">Lista de tareas</a>
-        <a class="text-white d-block text-decoration-none">Contacto</a>
+        <a class="text-white d-block text-decoration-none">Contacto</a> -->
+        <i (click)="nuevoTask()" class="bi bi-plus-circle "></i>
+        <i (click)="editarTask()" class="bi bi-pencil"></i>
+        <i (click)="eliminarTask()" class="bi bi-trash"></i>
+        <i routerLink="app/login" class="bi bi-door-closed"></i>
         <button type="button" class="btn btn-light position-absolute" (click)="toggleNav()" >
             <i class="bi bi-x-lg"></i>
         </button>
+    </div>
     </nav>
     <div class="col-2">
         <button type="button" class="btn btn-light" (click)="toggleNav()">

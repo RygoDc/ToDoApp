@@ -25,6 +25,14 @@ export class FooterComponent implements OnInit {
 
   nuevoTask(){
     this.activaFooterService.toggleFooter(true);
-    this.router.navigate(['app/nuevo-task']);
+    this.router.navigate(['fn/nuevo-task']);
+  }
+
+  editarTask(){
+    alert("Seleccione una tarea para editar");
+  }
+
+  eliminarTask(){
+    alert("Seleccione una tarea para eliminar");
   }
 }

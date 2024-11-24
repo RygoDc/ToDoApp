@@ -13,6 +13,9 @@ import { LayoutSinHeaderComponent } from './layout-sin-header/layout-sin-header.
 import { LayoutConHeaderComponent } from './layout-con-header/layout-con-header.component';
 import { NuevoTaskComponent } from './nuevo-task/nuevo-task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditarComponent } from './editar/editar.component';
+import { PopupComponent } from './popup/popup.component';
+import { LayoutSinFooterComponent } from './layout-sin-footer/layout-sin-footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MainComponent,
     LayoutSinHeaderComponent,
     LayoutConHeaderComponent,
-    NuevoTaskComponent
+    NuevoTaskComponent,
+    EditarComponent,
+    PopupComponent,
+    LayoutSinFooterComponent
   ],
   imports: [
     BrowserModule,

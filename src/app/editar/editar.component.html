@@ -1,7 +1,7 @@
 <div class="container nuevaTarea">
-    <h2>Nueva Tarea</h2>
+    <h2>Tarea</h2>
     <br />
-    <form method="post" class="form-horizontal" (ngSubmit)="agregarTarea()" [formGroup]="formulario">
+    <form method="post" class="form-horizontal" (ngSubmit)="actualizarTarea()" [formGroup]="formulario">
         <div class="form-group">
             <label class="control-label col-2" for="date">Fecha</label>
             <input
@@ -31,11 +31,21 @@
                 name="descripcion"
                 id="descripcion"
             ></textarea>
-            <br/>          
-            
+            <br />
+            <label class="control-label col-2" for="status">Status</label>
+            <select
+                formControlName="status"
+                class="form-control col-10"
+                name="status"
+                id="status"
+            >
+                <option value="pendiente">Pendiente</option>
+                <option value="completada">Completada</option>
+            </select>
+            <br>
         </div>
         <button type="submit" class=" col-5 btn btn-success">
-            Guardar
+            Actualizar
         </button>
         <button (click)="volver()" type="button" class="col-5 btn btn-danger">
             Cancelar

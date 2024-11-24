@@ -1,8 +1,11 @@
 <footer class="position-fixed bottom-0 w-100 z-1">
     <div class="contenedorFooter d-flex w-100 justify-content-around">
-        <i (click)="nuevoTask()" class="bi bi-plus-circle {{!administraFooter ? '' : 'opacity-25 disabled'}}"></i>
-        <i class="bi bi-pencil {{administraFooter ? '' : 'opacity-25 disabled'}}"></i>
-        <i class="bi bi-trash {{administraFooter ? '' : 'opacity-25 disabled'}}"></i>
+        <!-- <i (click)="nuevoTask()" class="bi bi-plus-circle {{!administraFooter ? '' : 'opacity-25 disabled'}}"></i>
+        <i (click)="editarTask()" class="bi bi-pencil {{administraFooter ? '' : 'opacity-25 disabled'}}"></i>
+        <i (click)="eliminarTask()" class="bi bi-trash {{administraFooter ? '' : 'opacity-25 disabled'}}"></i> -->
+        <i (click)="nuevoTask()" class="bi bi-plus-circle "></i>
+        <i (click)="editarTask()" class="bi bi-pencil"></i>
+        <i (click)="eliminarTask()" class="bi bi-trash"></i>
         <i routerLink="app/login" class="bi bi-door-closed"></i>
     </div>
     

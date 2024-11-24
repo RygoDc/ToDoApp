@@ -1,22 +1,31 @@
+<app-popup *ngIf="crudService.mostrarPopup"></app-popup>
 <div class="main">
-    <div class="container">   
-        <h2>Tareas Pendientes</h2>     
-        <div class="container-fluid" id="contPendientes">            
-            <div class="row flex-nowrap" *ngIf="tareasPendientes.length > 0">           
-                <div class="card card-block1" *ngFor="let tareap of tareasPendientes">
-                    {{tareap.date}}<br>{{tareap.name}}
-                    <!-- <button (click)="iniciarEdicion(tarea)">{{tareap.date}}<br>{{tareap.name}}</button>                     -->
-                </div>                
+    <div class="container">
+        <h2>Tareas Pendientes</h2>
+        <div class="container-fluid" id="contPendientes">
+            <div class="row flex-nowrap" *ngIf="tareasPendientes.length > 0">
+                <div
+                    class="card card-block1"
+                    *ngFor="let tareap of tareasPendientes"
+                >
+                    <button (click)="abrirPopupConTarea(tareap)">
+                        {{ tareap.date }}<br />{{ tareap.name }}
+                    </button>                    
+                </div>
             </div>
         </div>
-        <br>
-        <h2>Tareas Realizadas</h2>        
-        <div class="container-fluid" id="contCompletadas">            
-            <div class="row flex-nowrap" *ngIf="tareasCompletadas.length > 0">           
-                <div class="card card-block2" *ngFor="let tarear of tareasCompletadas">
-                    {{tarear.date}}<br>{{tarear.name}}
-                    <!-- <button class="btn" (click)="seleccionarTarea(tareasCompletadas, false)">{{tarear.date}}<br>{{tarear.name}}</button>                     -->
-                </div>                
+        <br />
+        <h2>Tareas Realizadas</h2>
+        <div class="container-fluid" id="contCompletadas">
+            <div class="row flex-nowrap" *ngIf="tareasCompletadas.length > 0">
+                <div
+                    class="card card-block2"
+                    *ngFor="let tarear of tareasCompletadas"
+                >
+                    <button (click)="abrirPopupConTarea(tarear)">
+                        {{ tarear.date }}<br />{{ tarear.name }}
+                    </button>
+                </div>
             </div>
         </div>
     </div>

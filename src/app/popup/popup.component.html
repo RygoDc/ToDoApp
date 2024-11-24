@@ -1,0 +1,9 @@
+<div class="popup">
+  <button class="cerrar" (click)="cerrarPopup()">✖</button>
+  <h3>Opciones para: {{ crudService.tareaSeleccionada?.name }}</h3>
+  <div class="botones">
+    <button (click)="cambiarEstado()">Cambiar estado</button>
+    <button (click)="editar()">Ver Tarea</button>
+    <button (click)="borrar()">Borrar</button>
+  </div>
+  </div>
